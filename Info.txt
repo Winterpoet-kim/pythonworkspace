@@ -1,0 +1,58 @@
+extention 설치
+1. open in browser 검색 -> [TeckER] 확인 설치
+
+web을 공부하고 싶으면
+구글에서 'w3school' 검색 HTML에 대해서 공부할 수 있음
+
+pip install requests
+
+정규식 관련 공부 
+1. w3school -> learn python -> python RegEx
+2. "python re" 검색 -> docs.python.org ...
+
+pip install beautifulsoup4
+pip install lxml
+
+프로그래밍 언어
+1. 컴파일 언어
+2. 인터프리터 언어
+
+
+
+////////////////////////////////////////////////////////
+
+git 설치
+
+----   git bash로 이동 -------
+$ git config --global user.name "winterpoet"
+
+$ git config --global user.email "dalbit1983@naver.com"
+
+[설정확인]
+$ git config --list
+
+
+-------------------------------------
+
+
+[맨처음에 project를 올릴때]
+$ git init
+
+[전부다 올림] : . 의 의미는 전부다~
+$ git add .
+
+[add 를 통해 발견된 새로운 파일이 있음을 확인]
+$ git status
+
+[]
+$ git commit -m "first commit"
+
+[github 와 project간의 연결]
+$ git remote add origin https://github.com/Winterpoet-kim/pythonworkspace.git
+
+[연결 확인]
+$ git remote -v
+
+[보내기]
+$ git push -u origin main
+$ git push origin mater
