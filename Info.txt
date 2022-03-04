@@ -56,3 +56,18 @@ $ git remote -v
 [보내기]
 $ git push -u origin main
 $ git push origin mater
+
+[전체 프로젝트 다운받기]
+1. cmd 창에서 해당 프로젝트 폴더로 이동
+2. github에서 오른쪽 상단 코드 확인
+3. git clone 확인한코드 저장폴더이름  # 만약 폴더이름을 쓰지 않으면 자동으로 프로젝트 이름의 폴더로 들어감
+
+[수정한것 올릴때 main 이 아닌 새 branch에 저장]
+1. git add .
+2. git commit -m "..."
+3. git checkout -b freshman  # master 대신 freshman 으로 저장해서 최종본(master)에는 영향없음
+4. git push - u origin main
+
+
+[프로젝트의 수정사항 동기화하기]
+1. git pull
