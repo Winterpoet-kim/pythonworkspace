@@ -31,6 +31,11 @@ chrome driver 설치
 5. puthonworkspace에 압축 풀기
 
 
+220306_night
+
+selenium을 더 공부하고 싶으면..
+1. 구글에서 "selenium wieth python" 검색
+
 
 
 
