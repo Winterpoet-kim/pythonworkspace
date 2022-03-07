@@ -37,6 +37,12 @@ selenium을 더 공부하고 싶으면..
 1. 구글에서 "selenium wieth python" 검색
 
 
+--------------------------------------------------
+
+220307_night
+
+pip install openpyxl
+
 
 
 
