@@ -44,5 +44,15 @@ selenium을 더 공부하고 싶으면..
 pip install openpyxl
 
 
+--------------------------------------------------
+
+220308_day
+
+openpyxl 더 공부하려면..
+google 에서 "openpyxl" 검색
+
+
+
+
 
 
