@@ -33,3 +33,4 @@ import pyperclip
 
 pyperclip.copy("나도코딩")  # 글자를 클립보드에 저장
 pyautogui.hotkey("ctrl", "v")
+
