@@ -64,3 +64,11 @@ pip install opencv-python  : 이미지 정확도 조정에 필요함.
 글자별로 의미가 무엇인지 확인가능
 
 pip install pyperclip : 어떤 문장을 클립보드에 집어넣음
+
+--------------------------------------------------
+
+220314_day
+
+유용한 싸이트
+변수 저장에 대한 시각화
+pythontutor.com -> render all objects on the heap 옵션 선택
