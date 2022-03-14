@@ -72,3 +72,11 @@ pip install pyperclip : 어떤 문장을 클립보드에 집어넣음
 유용한 싸이트
 변수 저장에 대한 시각화
 pythontutor.com -> render all objects on the heap 옵션 선택
+
+
+--------------------------------------------------
+
+220314_night
+
+메일 수신처리 관련 package 설치
+pip install imap-tools
