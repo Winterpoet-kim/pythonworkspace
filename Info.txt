@@ -84,6 +84,8 @@ pip install imap-tools
 
 --------------------------------------------------
 
+220316_night
+
 anaconda 환경설정
 
 1. google 에서 anaconda 검색
@@ -94,3 +96,13 @@ anaconda 환경설정
 
 jupyter notebook 사용법 익히기.
 
+
+--------------------------------------------------
+
+
+220317_day
+
+jupyter notebook 실행
+
+1. new->folder->rename : PythonDataWorkspace
+2. PythonDataWorkspace 안에 폴더 만들기(Matplotlib, Pandas, 프로젝트)
