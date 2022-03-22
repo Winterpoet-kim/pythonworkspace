@@ -1,0 +1,41 @@
+pip install pyintaller
+
+=> dist, build 폴더, practice.spec 파일 생성됨.
+=> dist 폴더안에 exe 파일 확인
+
+
+예1) practice.py  # 터미널에서 결과 실행되는 파일
+> pyinstaller .\practice.py
+> pyinstaller -F .\practice.py     # 옵션 -F : 부가적인 파일까지 모두 압축해서 exe 파일 하나만 생성함.
+
+
+예2) label.py   # 윈도우 UI 실행 파일
+> pyinstaller -w  .\label.py  # 옵션 -w : 터미널 없이 윈도우 UI 바로 실행
+> pyinstaller -w -F .\label.py
+
+<< 리소스 파일과 함께 작업시 >>
+구글링 : pyinstaller add folder with images in exe file
+
+/////////////////////////////////////////////////////////////
+# 이미지 관련 코드에서 경로를 다음 함수를 써서 작성(수정) 필요
+
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+/////////////////////////////////////////////////////////////
+
+ # 옵션 --add-data : 리소스파일(이미지 등)이 명시적으로 포함
+> pyinstaller -w --add-data '추가할 파일;어느 위치에 넣을지' .\label.py 
+> pyinstaller -w --add-data '.\gui_basic\*.png;gui_basic' .\label.py 
+> pyinstaller -w --add-data '.\gui_basic\*.png;gui_basic' -F .\label.py 
+
+# 옵션 --add-data : 여러개의 파일을 명시적으로 포함시킬 때 (연속적으로 쓰면됨.)
+> pyinstaller -w --add-data '추가할 파일;어느 위치에 넣을지' --add-data '추가할 파일;어느 위치에 넣을지' .\label.py 
+
