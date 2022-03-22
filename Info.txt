@@ -112,7 +112,7 @@ jupyter notebook 실행
 
 220322_day
 
-pip install pyintaller
+pip install pyinstaller
 
 [활용편 6] 이미지 처리
 - 환경설정1 : jupyter notebook 실행 -> 폴더(PythonImageWorkspace) -> 폴더(OpenCV)
