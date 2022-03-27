@@ -1,0 +1,26 @@
+구글에서 검색
+
+1. '영어로'
+
+2. '단순하게'  
+ex) [언어종류][핵심 검색어] 'python write file'
+ex) find 와 index 의 차이가 궁금하면.. 'python find vs index'
+ex) [언어종류][에러 메세지]
+
+3. site: 검색어 마지막에 url을 적으면 그 site 내에서만 검색
+[url] = 'stackoverflow.com'
+ex) python write file site:stackoverflow.com
+
+4. Ctrl + Click
+
+5. filetype:
+ex) filetype:ppt
+ex) 파이썬 머신러닝 filetype:ppt
+
+6. "키워드 검색"
+ex) python "randint vs randrange"
+
+7. +포함, -제외
+ex1) python excel automation library
+ex2) python excel automation library +openpyxl  : openpyxl을 반드시 포함
+ex3) python excel automation library -openpyxl  : openpyxl을 제외 
