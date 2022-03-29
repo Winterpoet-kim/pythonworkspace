@@ -1,0 +1,59 @@
+import pygame
+import os
+
+# 보석 클래스
+class Gemstone(pygame.sprite.Sprite):
+    def __init__(self, image, position):
+        super().__init__()
+        self.image = image
+        self.rect = image.get_rect(center=position)
+
+def setup_gemstone():
+    small_gold = Gemstone(gemstone_images[0], (200, 380))
+    gemstone_group.add(small_gold)
+    big_gold = Gemstone(gemstone_images[1], (300, 500))
+    gemstone_group.add(big_gold)
+    stone = Gemstone(gemstone_images[2], (300, 380))
+    gemstone_group.add(stone)
+    diamond = Gemstone(gemstone_images[3], (900, 420))
+    gemstone_group.add(diamond)
+
+pygame.init()
+screen_width = 1280
+screen_height = 720
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Gold Minder")
+clock = pygame.time.Clock()
+
+current_path = os.path.dirname(__file__)  # 현재 파일의 위치 반환
+background = pygame.image.load(os.path.join(current_path, "background.png"))
+
+# 4개 보석 이미지 불러오기 (작은 금, 큰 금, 돌, 다이아몬드)
+gemstone_images = [
+    pygame.image.load(os.path.join(current_path, "small_gold.png")),
+    pygame.image.load(os.path.join(current_path, "big_gold.png")),
+    pygame.image.load(os.path.join(current_path, "stone.png")),
+    pygame.image.load(os.path.join(current_path, "diamond.png"))
+    ]
+
+# 보석 그룹
+gemstone_group = pygame.sprite.Group()
+setup_gemstone()
+
+running = True
+
+while running:
+    clock.tick(30)   # FPS 값이 30으로 고정 (게임 속도가 일정하게 유지)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.blit(background, (0, 0))
+
+    # 그룹 내 모든 스프라이트를 screen에 그리기
+    gemstone_group.draw(screen)
+
+    pygame.display.update()
+
+pygame.quit()

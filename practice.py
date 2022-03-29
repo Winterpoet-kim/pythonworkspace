@@ -1057,3 +1057,17 @@
 # import byme
 
 # byme.sign()
+
+
+# import math
+
+# rad_angle1 = math.radians(0)
+# rad_angle2 = math.radians(90)
+# rad_angle3 = math.radians(180)
+# print(rad_angle1)
+# print(rad_angle2)
+# print(rad_angle3)
+
+import pygame
+
+print(pygame.font.get_fonts())
