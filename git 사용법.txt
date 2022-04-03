@@ -50,3 +50,10 @@ $ git push origin mater
 
 [프로젝트의 수정사항 동기화하기]
 1. git pull
+
+
+----------------------------------------------------
+
+220403_night
+
+> git config --global -e
