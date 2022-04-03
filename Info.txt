@@ -121,3 +121,19 @@ pip install pyinstaller
 
 --------------------------------------------------
 
+220402_night
+
+앱개발
+1. 안드로이드
+ - tool = 안드로이드 스튜디오
+ - 언어 = Java, Kotlin
+
+2. iOS
+ - tool = X-Code
+ - 언어 = Swift, Objective-C
+
+
+[python 활용 분야]
+1. 웹서버 프로그램 (백엔드)
+2. 머신러닝 : tensorflow
+3. 데이터 사이언스 : 데이터에 대한 통계, 분석, 시각화(Numpy, Pandas, Matplotlib)
