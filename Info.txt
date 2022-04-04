@@ -137,3 +137,16 @@ pip install pyinstaller
 1. 웹서버 프로그램 (백엔드)
 2. 머신러닝 : tensorflow
 3. 데이터 사이언스 : 데이터에 대한 통계, 분석, 시각화(Numpy, Pandas, Matplotlib)
+
+--------------------------------------------------
+
+220404_night
+
+<Class>
+파스칼 표기법 : 모든 단어를 대문자로 시작 ex) ClassName
+
+<함수, 변수>
+카멜 표기법 : 첫단어만 소문자로 시작 ex) functionName
+
+
+
