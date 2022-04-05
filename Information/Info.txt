@@ -153,5 +153,6 @@ pip install pyinstaller
 
 220405_day
 
-
+코틀린 practice
+ = play.kotlinlang.org
 
