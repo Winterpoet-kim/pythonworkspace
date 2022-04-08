@@ -57,3 +57,25 @@ $ git push origin mater
 220403_night
 
 > git config --global -e
+
+
+
+----------------------------------------------------
+
+220408_day
+
+
+git 설정
+집에서 해야할 순서 : 
+1. AndroidStudioProjects/Tutorial 폴더 만들기
+
+2. Tutorial 폴더와 repository 연결 
+> git init
+> git branch -M master
+> git remote add origin https://github.com/Winterpoet-kim/AndroidStudio_Tutorial.git
+
+3. git pull 로 repository에서 파일 먼저 받기
+
+4. 노트북의 KotlinPractice 파일을 Trtorial 폴더로 옮기기
+
+5. 추가된 파일 commit, push 로 업로드 하기.
