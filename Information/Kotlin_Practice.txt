@@ -76,3 +76,31 @@ class MainActivity : AppCompatActivity() {
 lottieanimation
 https://lottiefiles.com/
 lottieanimation github
+
+5. 상단 패키지명 없애기
+
+res>values>themes 파일에서
+<style ... .DarkActionBar> ->  <style ... .NoActionBar>
+
+
+6. status 바 투명하게 만들기
+
+res>values>themes 파일에 추가
+
+<item name="android:windowTranslucentStatus">true</item>
+<item name="android:windowTranslucentNavigation">true</item>
+
+
+7. 동그라미 이미지뷰
+
+gradle파일에 dependencies { } 안에 추가
+
+implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+8. 플러그인 추가 (import kotlinx.android.synthetic.main. 관련..)
+
+gradle파일에
+
+plugins {
+    id 'kotlin-android-extensions'
+}
