@@ -76,7 +76,7 @@ lottieanimation
 https://lottiefiles.com/
 lottieanimation github
 
-5. 상단 패키지명 없애기
+5. 상단 패키지명 (액션바 : ActionBar) 없애기
 
 res>values>themes 파일에서
 <style ... .DarkActionBar> ->  <style ... .NoActionBar>
@@ -117,5 +117,63 @@ plugins {
 
 https://www.flaticon.com/
 
+
+11. 네비게이션 뷰
+
+gradle파일에
+
+dependencies {
+    implementation 'com.google.android.material:material:1.5.0'
+}
+
+
+12. WebView
+
+AndroidManifest.xml 파일에 추가
+
+    <!-- 인터넷 사용을 위한 Permission 허용 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        ...
+        <!-- android 버전 9.0 이상에서의 웹 보안 이슈 때문에 설정 -->
+        android:usesCleartextTraffic="true"
+        .. >
+        <activity
+
+
+
+13. 카메라 (Camera) 사용
+
+1. AndroidManifest.xml 파일에 추가
+
+    <uses-permission android:name="android.permission.CAMERA"/>  <!-- 카메라 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- 파일 쓰기 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- 파일 읽기 권한-->
+    <uses-feature android:name="android.hardware.camera" android:required="true"/> <!-- 카메라 기능 권한 -->
+
+
+2. 허용 팝업 쉽게 구현하기 위한 import
+
+gradle파일에
+
+dependencies {
+    implementation 'io.github.ParkSangGwon:tedpermission:2.3.0'
+}
+
+
+3. AndroidManifest.xml 파일에 추가
+ = 보안 강화로 인하여 어떤 앱이 카메라를 사용하려고 하는지 provider 에 대한 내용을 명시해야함.
+
+        </activity>
+        <provider
+            android:authorities="com.example.camera.fileprovider"   <!-- 현재 패키지명.fileprovider -->
+            android:name="androidx.core.content.FileProvider"   
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
 
 
