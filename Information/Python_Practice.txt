@@ -150,3 +150,9 @@ pip install pyinstaller
 
 
 --------------------------------------------------
+
+220414_night
+
+AI 코딩 추천 : extends
+
+= tabnine
