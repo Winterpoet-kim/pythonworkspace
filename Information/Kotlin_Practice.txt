@@ -177,3 +177,13 @@ dependencies {
     </application>
 
 
+
+14. 개념 정리 추천 블로그 (코틀린)
+
+https://hungseong.tistory.com/
+
+
+15. 코딩 문제 싸이트
+
+(백준)
+https://www.acmicpc.net/
