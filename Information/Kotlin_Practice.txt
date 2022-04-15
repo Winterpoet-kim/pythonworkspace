@@ -187,3 +187,29 @@ https://hungseong.tistory.com/
 
 (백준)
 https://www.acmicpc.net/
+
+
+16. <github> : https://github.com/wasabeef/awesome-android-ui
+[3rd party library]
+List of Android UI/UX Livraries
+
+
+
+17. Service 사용법 2가지
+
+<중요> AndroidManifest 파일에 service 등록
+
+        </activity>
+        <service android:name=".MusicService"/>
+    </application>
+
+
+https://lab.cliel.com/entry/Kotlin-%EC%84%9C%EB%B9%84%EC%8A%A4Service
+
+
+18. 노티 알림 (Notification) : PendingIntent
+
+Cloud Messaging : https://console.firebase.google.com/
+
+
+
