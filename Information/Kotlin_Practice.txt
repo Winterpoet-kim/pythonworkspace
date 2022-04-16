@@ -213,3 +213,33 @@ Cloud Messaging : https://console.firebase.google.com/
 
 
 
+19. github 예제 사용법
+
+검색 : android loading animation github
+
+code -> zip 다운로드 -> 프로젝트 open
+
+
+20. 구글맵 사용
+
+- 검색 : 구글맵 콘솔  -> google cloud platform -> API 키 설정
+
+- 내컴퓨터 : cmd -> "C:\Program Files\Android\Android Studio\jre\bin\keytool" -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+결과 화면에서 SHA1 값 확인필요
+
+- 프로젝트의 AndroidManifest.xml 에서 다음을 추가입력
+
+        </activity>
+        
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAPPunTN3VUCeREIkYwr9WgkBPiGEEzh54"/>
+    </application>
+
+- 프로젝트의 build.gradle 에서 다음을 추가입력
+
+dependencies {    
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    
+}
